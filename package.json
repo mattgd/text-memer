@@ -1,0 +1,24 @@
+{
+  "name": "text-memer",
+  "version": "1.0.0",
+  "description": "An AWS Lambda function to turn regular text into meme text.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattgd/text-memer.git"
+  },
+  "keywords": [
+    "lambda",
+    "meme",
+    "text"
+  ],
+  "author": "Matt Dzwonczyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattgd/text-memer/issues"
+  },
+  "homepage": "https://github.com/mattgd/text-memer#readme"
+}
