@@ -62,3 +62,6 @@ typings/
 
 # Typescript builds
 /lib
+
+# macOS
+.DS_Store

@@ -1,6 +1,6 @@
 'use strict';
 
-import { APIGatewayEvent } from "aws-lambda";
+import { APIGatewayEvent } from 'aws-lambda';
 var qs = require('querystring');
 
 /**
@@ -69,7 +69,7 @@ const toLeet: (text: string) => string = text => {
     t: '7',
     z: '2'
   };
-  
+
   for (var ch in chars) {
     var regex = new RegExp(ch, 'gi');
     text = text.replace(regex, chars[ch]);
