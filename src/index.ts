@@ -30,7 +30,7 @@ const toLacey: (text: string) => string = (text) => {
 
 /**
  * Converts the text input to "bum" formatted text.
- * For example: This is a test -> T H I S I S A T E S T
+ * For example: This is a test -> T H I S  I S  A  T E S T
  * @param {string} text The text to format.
  * @returns {string} The formatted text.
  */
@@ -39,8 +39,11 @@ const toBum: (text: string) => string = (text) => {
   const n = text.length;
   
   for (var i = n - 1; i >= 0; i--) {
-    if (!/\s/.test(text[i]) && (i + 1 < n && !/\s/.test(text[i + 1]))) {
-      textArr.splice(i + 1, 0, ' ');
+    textArr.splice(i + 1, 0, ' ');
+
+    // Skip the next character if it's a space, or else we get extra spaces
+    if (/\s/.test(text[i])) {
+      i--;
     }
   }
   

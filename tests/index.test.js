@@ -19,7 +19,7 @@ test("lacey", async () => {
 });
 
 test("bum", async () => {
-  const expectedText = 'A C O M P R E H E N S I V E T E S T ! A G R E A T T E S T I N D E E D , W I T H . P U N C T U A T I O N . A N D . : O T H E R S T U F F';
+  const expectedText = 'A  C O M P R E H E N S I V E  T E S T !  A  G R E A T  T E S T  I N D E E D ,  W I T H . P U N C T U A T I O N . A N D . : O T H E R  S T U F F';
   const event = generateInputEvent('bum');
   const output = await tm.handler(event);
   const expected = generateExpectedResponse(expectedText);
