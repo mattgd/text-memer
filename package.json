@@ -1,11 +1,11 @@
 {
   "name": "text-memer",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "An AWS Lambda function to turn regular text into meme text.",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest",
+    "test": "tsc && jest",
     "deploy": "zip -j ./lib/function.zip ./lib/index.js && aws lambda --profile lambda-deploy update-function-code --function-name textMemer --zip-file fileb://lib/function.zip"
   },
   "repository": {
@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/mattgd/text-memer#readme",
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.39",
-    "@types/node": "^12.12.17",
-    "jest": "^24.9.0",
-    "typescript": "^3.7.3"
+    "@types/aws-lambda": "^8.10.40",
+    "@types/node": "^13.7.1",
+    "jest": "^25.1.0",
+    "typescript": "^3.7.5"
   }
 }
